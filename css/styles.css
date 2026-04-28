@@ -1,0 +1,181 @@
+:root {
+    font-size: 1-px;
+}
+
+html {
+  scroll-behavior:smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    font-family: "Roboto", sans-serif;
+}
+
+
+body {
+    background-color: black;
+}
+
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header {
+    & img {
+        width: 70px;
+    }
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: white;
+    background-color: rgb(172, 1, 1);
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.navbar a {
+    margin: 0 1rem;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.navbar a:hover {
+    color: black;
+    border-bottom: 0.1rem solid black;
+    padding-bottom: 0.2rem;
+}
+
+.btn {
+    background: red;
+    color: white;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.btn:hover {
+    letter-spacing: 0.1rem;
+}
+
+.home-container {
+    background: url(../assets/img/img2.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.home-container section {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.content {
+    max-width: 100rem;
+}
+
+.content h3 {
+    color: white;
+    font-size: 5rem;
+    text-shadow: 4px 4px 8px black;
+}
+
+.content p {
+    color: white;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.8;
+    padding: 1rem 0;
+    text-shadow: 4px 4px 8px rgb(0, 0, 0);
+}
+
+.title {
+    font-size: 5rem;
+    color: white;
+    text-align: center;   
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+.title span {
+    color: red;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.history .row {
+    display: flex;
+    align-items: center;
+    background-color: rgb(30, 29, 29);
+    gap: 1.5rem;
+}
+
+.history .row .content {
+    padding: 2rem;
+}
+
+.history .row .content h3 {
+    font-size: 3rem;
+    color: white;
+}
+
+.history .row .content p {
+    font-size: 1.6rem;
+    color: white;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.titulo .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.titulo .box-container .box {
+    text-align: center;
+    border: rgb(252, 252, 252);
+    padding: 5rem;
+    cursor: pointer;
+}
+
+.titulo .box-container .box:hover {
+    background-color: white;
+}
+
+.titulo .box-container .box img {
+    height: 10rem;
+}
+
+.titulo .box-container .box h3 {
+    color: white;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.titulo .home-container .box .qtd {
+    color: rgb(254, 9, 9);
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+}
+
